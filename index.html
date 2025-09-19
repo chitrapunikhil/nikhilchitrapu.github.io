@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nikhil Chitrapu | Project Manager Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Nikhil Chitrapu, certified project manager and engineer with international experience.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1e40af;
+      --accent: #2563eb;
+      --bg: #f6f8fa;
+      --card: #fff;
+      --text: #22223b;
+      --muted: #64748b;
+      --radius: 16px;
+      --shadow: 0 6px 24px rgba(30,64,175,0.07);
+      --max-width: 920px;
+      --header-height: 70px;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      background: var(--card);
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      height: var(--header-height);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 36px;
+    }
+    .logo {
+      font-weight: 800;
+      font-size: 1.4rem;
+      color: var(--primary);
+      letter-spacing: 1px;
+    }
+    nav {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+      position: relative;
+      font-size: 1rem;
+      padding-bottom: 2px;
+    }
+    nav a.active, nav a:hover {
+      color: var(--primary);
+      border-bottom: 2px solid var(--primary);
+    }
+    .lang-switch {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 7px 20px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background 0.2s;
+      margin-left: 18px;
+    }
+    .lang-switch:hover { background: var(--primary); }
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 32px 20px;
+    }
+    section {
+      margin-bottom: 48px;
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 40px;
+    }
+    @media (max-width: 700px) {
+      header { padding: 0 12px; height: auto;}
+      main { padding: 12px 4px; }
+      section { padding: 16px;}
+      nav { gap: 10px;}
+    }
+    h1, h2, h3 {
+      color: var(--primary);
+      margin: 0 0 16px 0;
+      font-weight: 800;
+    }
+    h1 { font-size: 2.3rem; }
+    h2 { font-size: 1.3rem; }
+    h3 { font-size: 1rem; color: var(--accent);}
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+      background: linear-gradient(90deg,#e0e7ff 70%,#f6f8fa 100%);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 32px;
+      margin-bottom: 0;
+    }
+    .hero-img {
+      flex: 0 0 180px;
+      width: 180px; height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 8px 32px rgba(37,99,235,0.11);
+      border: 4px solid var(--primary);
+      background: #fff;
+    }
+    .hero-content { flex: 1; min-width: 240px; }
+    .hero-title { font-size: 2.1rem; margin-bottom: 10px;}
+    .hero-role { font-size: 1.1rem; font-weight: 600; color: var(--accent);}
+    .hero-cta {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 13px 32px;
+      border-radius: var(--radius);
+      font-weight: 700;
+      font-size: 1.07rem;
+      cursor: pointer;
+      margin-top: 26px;
+      box-shadow: var(--shadow);
+      transition: background 0.2s, transform 0.2s;
+      letter-spacing: 0.5px;
+    }
+    .hero-cta:hover { background: var(--primary); transform: scale(1.05);}
+    .info-list {
+      list-style: none;
+      padding: 0; margin: 0;
+      margin-bottom: 8px;
+      font-size: 1rem;
+      color: var(--muted);
+    }
+    .info-list li { margin-bottom: 6px;}
+    .exp-timeline {
+      margin-top: 20px;
+      border-left: 3px solid var(--accent);
+      padding-left: 22px;
+    }
+    .exp-job {
+      margin-bottom: 24px;
+    }
+    .exp-title {
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 1.07rem;
+      margin-bottom: 4px;
+    }
+    .exp-period {
+      color: var(--accent);
+      font-size: 0.98rem;
+      margin-bottom: 2px;
+    }
+    .exp-details {
+      font-size: 0.99rem;
+      color: var(--muted);
+      margin-bottom: 2px;
+    }
+    .cert-badge {
+      background: var(--primary);
+      color: #fff;
+      border-radius: 8px;
+      padding: 6px 15px;
+      font-size: 0.98rem;
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 7px;
+      font-weight: 600;
+    }
+    .skills-list {
+      list-style: none;
+      padding: 0; margin: 0;
+      display: flex; flex-wrap: wrap; gap: 10px;
+      margin-bottom: 4px;
+      font-size: 1rem;
+    }
+    .skills-list li {
+      background: #e0e7ff;
+      color: var(--primary);
+      padding: 7px 15px;
+      border-radius: 8px;
+      font-size: 0.98rem;
+      margin-bottom: 7px;
+      font-weight: 500;
+    }
+    .contact-list {
+      list-style: none;
+      padding: 0; margin: 0;
+      margin-top: 10px;
+    }
+    .contact-list li {
+      margin-bottom: 7px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+    .availability {
+      background: #e0e7ff;
+      color: var(--accent);
+      font-weight: 600;
+      border-radius: 8px;
+      padding: 7px 17px;
+      display: inline-block;
+      margin-top: 12px;
+    }
+    .section-title-bar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    @media (max-width: 900px) {
+      .hero { flex-direction: column; align-items: flex-start; padding: 16px;}
+      .hero-img {margin-bottom: 20px;}
+      section {padding: 10px;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Nikhil Chitrapu</div>
+    <nav>
+      <a href="#about" class="active" data-en="About" data-de="Über mich">About</a>
+      <a href="#experience" data-en="Experience" data-de="Erfahrung">Experience</a>
+      <a href="#education" data-en="Education" data-de="Ausbildung">Education</a>
+      <a href="#skills" data-en="Skills" data-de="Kenntnisse">Skills</a>
+      <a href="#contact" data-en="Contact" data-de="Kontakt">Contact</a>
+      <button class="lang-switch" id="langSwitch" aria-label="Switch language">DE</button>
+    </nav>
+  </header>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <img class="hero-img" src="images/profile.jpg" alt="Nikhil Chitrapu Portfolio">
+      <div class="hero-content">
+        <div class="hero-title" data-en="Nikhil Chitrapu" data-de="Nikhil Chitrapu">Nikhil Chitrapu</div>
+        <div class="hero-role" data-en="Project Manager | Scrum Master | PRINCE2® Specialist" data-de="Projektmanager | Scrum Master | PRINCE2® Spezialist">Project Manager | Scrum Master | PRINCE2® Specialist</div>
+        <ul class="info-list">
+          <li data-en="Berlin, Germany" data-de="Berlin, Deutschland">Berlin, Germany</li>
+          <li data-en="Email: nikhilchitrapu193@gmail.com" data-de="E-Mail: nikhilchitrapu193@gmail.com">Email: nikhilchitrapu193@gmail.com</li>
+          <li data-en="Phone: +49 155 10877211" data-de="Telefon: +49 155 10877211">Phone: +49 155 10877211</li>
+        </ul>
+        <p data-en="Certified Scrum Master & PRINCE2® project management professional with over 9 years of international experience in engineering, plant construction, and project management. McKinsey Forward graduate trained in structured problem solving, critical thinking, and digital collaboration. Expert in milestone and budget control, reporting, process optimization, cross-functional teamwork, stakeholder management, and AI generalist focused on agile methods."
+           data-de="Zertifizierter Scrum Master & PRINCE2® Projektmanagement-Profi mit über 9 Jahren internationaler Erfahrung in Engineering, Anlagenbau und Projektsteuerung. Absolvent des McKinsey Forward Programms mit Ausbildung in strukturierter Problemlösung, kritischem Denken und digitaler Zusammenarbeit. Experte in Meilenstein- und Budgetkontrolle, Reporting, Prozessoptimierung, abteilungsübergreifender Zusammenarbeit sowie Stakeholder-Management; KI-Generalist mit starkem Fokus auf agile Methoden.">
+          Certified Scrum Master & PRINCE2® project management professional with over 9 years of international experience in engineering, plant construction, and project management. McKinsey Forward graduate trained in structured problem solving, critical thinking, and digital collaboration. Expert in milestone and budget control, reporting, process optimization, cross-functional teamwork, stakeholder management, and AI generalist focused on agile methods.
+        </p>
+        <button class="hero-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
+                data-en="Contact Me" data-de="Kontaktieren Sie mich">Contact Me</button>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <div class="section-title-bar">
+        <h2 data-en="Professional Experience" data-de="Berufserfahrung">Professional Experience</h2>
+      </div>
+      <div class="exp-timeline">
+        <div class="exp-job">
+          <div class="exp-title" data-en="Concentrix-Meta, Berlin" data-de="Concentrix-Meta, Berlin">Concentrix-Meta, Berlin</div>
+          <div class="exp-period" data-en="03/2023 - 10/2024" data-de="03/2023 - 10/2024">03/2023 - 10/2024</div>
+          <div class="exp-details" data-en="Social Media Marketing Professional: End-to-end campaign management for 45+ EMEA clients (avg. 22% ROI uplift). Mentored and trained 12 colleagues (+25% team performance). Managed 180+ escalations (>90% client satisfaction). Supported SBG to GBG transition in 6 months."
+               data-de="Social Media Marketing Professional: End-to-End-Kampagnenmanagement für 45+ EMEA-Kunden (durchschnittlich 22% ROI-Steigerung). Mentoring und Schulung von 12 Kollegen (25% höhere Teamleistung). Bearbeitung von 180+ Eskalationen (90%+ Kundenzufriedenheit). Unterstützte den Übergang von SBG zu GBG in sechs Monaten.">
+            Social Media Marketing Professional: End-to-end campaign management for 45+ EMEA clients (avg. 22% ROI uplift). Mentored and trained 12 colleagues (+25% team performance). Managed 180+ escalations (>90% client satisfaction). Supported SBG to GBG transition in 6 months.
+          </div>
+        </div>
+        <div class="exp-job">
+          <div class="exp-title" data-en="MS Agarwal Foundries Pvt. Ltd., Hyderabad" data-de="MS Agarwal Foundries Pvt. Ltd., Hyderabad">MS Agarwal Foundries Pvt. Ltd., Hyderabad</div>
+          <div class="exp-period" data-en="03/2019 - 09/2022" data-de="03/2019 - 09/2022">03/2019 - 09/2022</div>
+          <div class="exp-details" data-en="Junior Engineer: Installed and commissioned mechanical systems in three steel plants (€50M). Led Thermex Quenching System project (+18% quality, -12% scrap). Coordinated 25+ cross-functional teams (35% fewer delays)."
+               data-de="Junior Ingenieur: Installation und Inbetriebnahme mechanischer Systeme in drei Stahlwerken (€50M). Leitung des Thermex Quenching System Projekts (Qualitätssteigerung um 18%, Ausschussreduktion um 12%). Koordination von 25+ funktionsübergreifenden Teams (Projektverzögerungen um 35% reduziert).">
+            Junior Engineer: Installed and commissioned mechanical systems in three steel plants (€50M). Led Thermex Quenching System project (+18% quality, -12% scrap). Coordinated 25+ cross-functional teams (35% fewer delays).
+          </div>
+        </div>
+        <div class="exp-job">
+          <div class="exp-title" data-en="Amazon, Frankenthal" data-de="Amazon, Frankenthal">Amazon, Frankenthal</div>
+          <div class="exp-period" data-en="11/2018 - 01/2019" data-de="11/2018 - 01/2019">11/2018 - 01/2019</div>
+          <div class="exp-details" data-en="Quality Control Associate: Investigated and resolved failed shipments; 95+ quality checks daily. Reintegrated 1,900 items/month. Participated in four Kaizen initiatives (+11% shipping accuracy)."
+               data-de="Qualitätskontrollmitarbeiter: Untersuchung und Behebung fehlgeschlagener Sendungen; 95+ Qualitätsprüfungen täglich. Monatlich 1.900 Artikel erfolgreich reintegriert. Teilnahme an vier Kaizen-Initiativen (Steigerung der Versandgenauigkeit um 11%).">
+            Quality Control Associate: Investigated and resolved failed shipments; 95+ quality checks daily. Reintegrated 1,900 items/month. Participated in four Kaizen initiatives (+11% shipping accuracy).
+          </div>
+        </div>
+        <div class="exp-job">
+          <div class="exp-title" data-en="Lokesh Machines Ltd., Hyderabad (India)" data-de="Lokesh Machines Ltd., Hyderabad (Indien)">Lokesh Machines Ltd., Hyderabad (India)</div>
+          <div class="exp-period" data-en="01/2016 - 10/2017" data-de="01/2016 - 10/2017">01/2016 - 10/2017</div>
+          <div class="exp-details" data-en="Mechanical Engineer: Developed 185+ CAD jigs, 280+ drawings (-23% production time). Optimized manufacturing for 14 cylinder block variants."
+               data-de="Maschinenbau Ingenieur: Entwicklung von 185+ CAD-Spannvorrichtungen, 280+ Zeichnungen (Produktionszeit um 23% reduziert). Optimierung der Fertigungsprozesse für 14 Zylinderblock-Varianten.">
+            Mechanical Engineer: Developed 185+ CAD jigs, 280+ drawings (-23% production time). Optimized manufacturing for 14 cylinder block variants.
+          </div>
+        </div>
+        <div class="exp-job">
+          <div class="exp-title" data-en="Rane Brake Lining Ltd., Hyderabad (India)" data-de="Rane Brake Lining Ltd., Hyderabad (Indien)">Rane Brake Lining Ltd., Hyderabad (India)</div>
+          <div class="exp-period" data-en="01/2014 - 12/2015" data-de="01/2014 - 12/2015">01/2014 - 12/2015</div>
+          <div class="exp-details" data-en="Mechanical Engineer: Supported 7 R&D projects, launched 3 products. Performed 140+ thermal analyses (+28% heat resistance). Developed/tested 23 prototypes (>90% success rate)."
+               data-de="Maschinenbau Ingenieur: Mitarbeit an 7 F&E-Projekten, 3 Produkte erfolgreich eingeführt. Durchführung von 140+ thermischen Analysen (Steigerung der Hitzebeständigkeit um 28%). Entwicklung und Testing von 23 Prototypen (>90% Erfolgsquote).">
+            Mechanical Engineer: Supported 7 R&D projects, launched 3 products. Performed 140+ thermal analyses (+28% heat resistance). Developed/tested 23 prototypes (>90% success rate).
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section id="education">
+      <div class="section-title-bar">
+        <h2 data-en="Education & Certifications" data-de="Ausbildung & Zertifikate">Education & Certifications</h2>
+      </div>
+      <div>
+        <strong data-en="JNTU Hyderabad, India" data-de="JNTU Hyderabad, Indien">JNTU Hyderabad, India</strong>
+        <div data-en="B. Tech Mechanical Engineering (06/2011 - 06/2015)" data-de="B. Tech Maschinenbau (06/2011 - 06/2015)">B. Tech Mechanical Engineering (06/2011 - 06/2015)</div>
+      </div>
+      <div style="margin:18px 0 0 0;">
+        <span class="cert-badge" data-en="McKinsey Forward - BUIC (08/2025 - 11/2025)" data-de="McKinsey Forward - BUIC (08/2025 - 11/2025)">McKinsey Forward - BUIC (08/2025 - 11/2025)</span>
+        <span class="cert-badge" data-en="AI Generalist Certification (Outskill, Berlin) (06/2025 - 07/2025)" data-de="AI-Generalist Zertifizierung (Outskill, Berlin) (06/2025 - 07/2025)">AI Generalist Certification (Outskill, Berlin) (06/2025 - 07/2025)</span>
+        <span class="cert-badge" data-en="PRINCE2® Specialist (Lecturio, Berlin) (12/2024 - 04/2025)" data-de="PRINCE2® Spezialist (Lecturio, Berlin) (12/2024 - 04/2025)">PRINCE2® Specialist (Lecturio, Berlin) (12/2024 - 04/2025)</span>
+        <span class="cert-badge" data-en="PeopleCert® Scrum Master (Lecturio, Berlin) (11/2024 - 02/2025)" data-de="PeopleCert® Scrum Master (Lecturio, Berlin) (11/2024 - 02/2025)">PeopleCert® Scrum Master (Lecturio, Berlin) (11/2024 - 02/2025)</span>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="section-title-bar">
+        <h2 data-en="Skills" data-de="Kenntnisse">Skills</h2>
+      </div>
+      <h3 data-en="Languages" data-de="Sprachkenntnisse">Languages</h3>
+      <ul class="skills-list">
+        <li data-en="English - C2" data-de="Englisch - C2">English - C2</li>
+        <li data-en="German - B1" data-de="Deutsch - B1">German - B1</li>
+      </ul>
+      <h3 data-en="IT Skills" data-de="IT-Kenntnisse">IT Skills</h3>
+      <ul class="skills-list">
+        <li data-en="Project Management (PRINCE2®, Agile, Scrum)" data-de="Projektmanagement (PRINCE2®, Agile, Scrum)">Project Management (PRINCE2®, Agile, Scrum)</li>
+        <li data-en="Data Analysis (Excel, SQL, Python basics)" data-de="Datenanalyse (Excel, SQL, Python Grundlagen)">Data Analysis (Excel, SQL, Python basics)</li>
+        <li data-en="CAD Tools (AutoCAD, SolidWorks, Siemens NX, Creo)" data-de="CAD-Tools (AutoCAD, SolidWorks, Siemens NX, Creo)">CAD Tools (AutoCAD, SolidWorks, Siemens NX, Creo)</li>
+      </ul>
+      <h3 data-en="AI Skills" data-de="KI-Kenntnisse">AI Skills</h3>
+      <ul class="skills-list">
+        <li data-en="AI Generalist & Prompt Engineering" data-de="KI-Generalist & Prompt Engineering">AI Generalist & Prompt Engineering</li>
+      </ul>
+      <h3 data-en="Professional Skills" data-de="Fachkenntnisse">Professional Skills</h3>
+      <ul class="skills-list">
+        <li data-en="Stakeholder Management" data-de="Stakeholder-Management">Stakeholder Management</li>
+        <li data-en="Change Management" data-de="Change-Management">Change Management</li>
+        <li data-en="Process Optimization" data-de="Prozessoptimierung">Process Optimization</li>
+        <li data-en="Lean Manufacturing" data-de="Lean Manufacturing">Lean Manufacturing</li>
+        <li data-en="Six Sigma Basics" data-de="Six Sigma Grundlagen">Six Sigma Basics</li>
+        <li data-en="Quality Management (ISO 9001)" data-de="Qualitätsmanagement (ISO 9001)">Quality Management (ISO 9001)</li>
+        <li data-en="Occupational Safety (OHSAS 18001)" data-de="Arbeitsschutz (OHSAS 18001)">Occupational Safety (OHSAS 18001)</li>
+        <li data-en="Engineering & Infrastructure Projects" data-de="Engineering- & Infrastrukturprojekte">Engineering & Infrastructure Projects</li>
+        <li data-en="Cross-functional Team Leadership" data-de="Cross-funktionale Teamführung">Cross-functional Team Leadership</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="section-title-bar">
+        <h2 data-en="Contact" data-de="Kontakt">Contact</h2>
+      </div>
+      <ul class="contact-list">
+        <li data-en="Address: Stern Straße 10, 13359 Berlin" data-de="Anschrift: Stern Straße 10, 13359 Berlin">Address: Stern Straße 10, 13359 Berlin</li>
+        <li data-en="Email: nikhilchitrapu193@gmail.com" data-de="E-Mail: nikhilchitrapu193@gmail.com">Email: nikhilchitrapu193@gmail.com</li>
+        <li data-en="Phone: +49 155 10877211" data-de="Telefon: +49 155 10877211">Phone: +49 155 10877211</li>
+      </ul>
+      <span class="availability" data-en="Currently available for new opportunities" data-de="Derzeit verfügbar für neue Möglichkeiten">Currently available for new opportunities</span>
+    </section>
+  </main>
+  <script>
+    // Language switcher
+    let currentLang = 'en';
+    document.getElementById('langSwitch').onclick = function() {
+      currentLang = currentLang === 'en' ? 'de' : 'en';
+      this.textContent = currentLang === 'en' ? 'DE' : 'EN';
+      document.querySelectorAll('[data-en]').forEach(function(el){
+        el.textContent = el.getAttribute(currentLang==='en'?'data-en':'data-de');
+      });
+      document.querySelectorAll('[data-de]').forEach(function(el){
+        el.textContent = el.getAttribute(currentLang==='en'?'data-en':'data-de');
+      });
+    };
+    // Nav highlight
+    const navLinks = document.querySelectorAll('nav a');
+    const sections = Array.from(document.querySelectorAll('section'));
+    window.addEventListener('scroll', () => {
+      let scrollY = window.scrollY;
+      let activeIdx = 0;
+      sections.forEach((sec, idx) => {
+        if (sec.offsetTop - 80 <= scrollY) activeIdx = idx;
+      });
+      navLinks.forEach(a => a.classList.remove('active'));
+      navLinks[activeIdx].classList.add('active');
+    });
+  </script>
+</body>
+</html>
