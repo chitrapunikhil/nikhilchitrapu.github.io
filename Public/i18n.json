@@ -1,0 +1,173 @@
+{
+  "en": {
+    "profile": {
+      "name": "Nikhil Chitrapu",
+      "title": "Project Manager | Certified Scrum Master | PRINCE2® Specialist | AI Generalist",
+      "summary": "Certified Scrum Master & PRINCE2® Project Management Professional with 9+ years of international experience in engineering, plant construction, and project management. Graduate of the McKinsey Forward Program with training in structured problem-solving, critical thinking, and digital collaboration. Expert in milestone and budget control, reporting, process optimization, cross-functional collaboration, and stakeholder management; AI Generalist with a strong focus on agile methodologies."
+    },
+    "experience": [
+      {
+        "period": "03/2023 - 10/2024",
+        "company": "Concentrix-Meta, Berlin",
+        "role": "Social Media Marketing Professional",
+        "details": [
+          "Managed end-to-end campaigns for 45+ EMEA clients with an average 22% ROI increase.",
+          "Mentored and trained 12 colleagues, boosting team performance by 25%.",
+          "Handled 180+ escalations with 90%+ customer satisfaction.",
+          "Supported the transition from SBG to GBG within six months."
+        ]
+      },
+      {
+        "period": "03/2019 - 09/2022",
+        "company": "MS Agarwal Foundries Pvt. Ltd., Hyderabad",
+        "role": "Junior Engineer",
+        "details": [
+          "Installed and commissioned mechanical systems in three steel plants (€50M).",
+          "Led the Thermex Quenching System project, increasing quality by 18% and reducing scrap by 12%.",
+          "Coordinated 25+ cross-functional teams, reducing project delays by 35%."
+        ]
+      },
+      {
+        "period": "11/2018 - 01/2019",
+        "company": "Amazon, Frankenthal",
+        "role": "Quality Control Associate",
+        "details": [
+          "Investigated and resolved failed shipments; performed 95+ quality checks daily.",
+          "Successfully reintegrated 1,900+ items per month.",
+          "Participated in four Kaizen initiatives, increasing shipping accuracy by 11%."
+        ]
+      },
+      {
+        "period": "01/2016 - 10/2017",
+        "company": "Lokesh Machines Ltd., Hyderabad",
+        "role": "Mechanical Engineer",
+        "details": [
+          "Developed 185+ CAD fixtures and 280+ drawings, reducing production time by 23%.",
+          "Optimized manufacturing processes for 14 cylinder block variants."
+        ]
+      },
+      {
+        "period": "01/2014 - 12/2015",
+        "company": "Rane Brake Lining Ltd., Hyderabad",
+        "role": "Mechanical Engineer",
+        "details": [
+          "Contributed to 7 R&D projects; 3 products successfully launched.",
+          "Performed 140+ thermal analyses, improving heat resistance by 28%.",
+          "Developed and tested 23 prototypes with over 90% success rate."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "period": "06/2011 - 06/2015",
+        "institution": "JNTU Hyderabad, India",
+        "degree": "B. Tech Mechanical Engineering"
+      }
+    ],
+    "certifications": [
+      "McKinsey Forward - BUIC (08/2025 - 11/2025)",
+      "AI Generalist Certification - Outskill, Berlin (06/2025 - 07/2025)",
+      "PRINCE2® Specialist (Foundation + Practitioner) - Lecturio GmbH (12/2024 - 04/2025)",
+      "PeopleCert® Scrum Master - Lecturio GmbH (11/2024 - 02/2025)"
+    ],
+    "skills": {
+      "Project Management": ["PRINCE2®", "Agile", "Scrum", "Milestone & Budget Control", "Process Optimization", "Change Management", "Stakeholder Management"],
+      "Engineering": ["Mechanical Systems", "Lean Manufacturing", "Six Sigma Basics", "Quality Management (ISO 9001)", "Occupational Safety (OHSAS 18001)"],
+      "AI & Data": ["AI Generalist", "Prompt Engineering", "Excel", "SQL", "Python (Basics)"],
+      "Languages": ["English - C2", "German - B1"]
+    },
+    "contact": {
+      "email": "nikhilchitrapu193@gmail.com",
+      "phone": "+49 155 10877211",
+      "location": "Berlin, Germany",
+      "linkedin": "https://linkedin.com/in/nikhilchitrapu",
+      "github": "https://github.com/chitrapunikhil"
+    }
+  },
+
+  "de": {
+    "profile": {
+      "name": "Nikhil Chitrapu",
+      "title": "Projektmanager | Zertifizierter Scrum Master | PRINCE2® Spezialist | AI Generalist",
+      "summary": "Zertifizierter Scrum Master & PRINCE2® Projektmanagement-Profi mit 9+ Jahren internationaler Erfahrung in Engineering, Anlagenbau und Projektsteuerung. Absolvent des McKinsey Forward Programms mit Ausbildung in strukturierter Problemlösung, kritischem Denken und digitaler Zusammenarbeit. Experte in Meilenstein- und Budgetkontrolle, Reporting, Prozessoptimierung, abteilungsübergreifender Zusammenarbeit sowie Stakeholder-Management; AI Generalist mit starkem Fokus auf agile Methoden."
+    },
+    "experience": [
+      {
+        "period": "03/2023 - 10/2024",
+        "company": "Concentrix-Meta, Berlin",
+        "role": "Social Media Marketing Professional",
+        "details": [
+          "End-to-End-Kampagnenmanagement für 45+ EMEA-Kunden mit durchschnittlich 22% ROI-Steigerung.",
+          "Mentoring und Schulung von 12 Kollegen, 25% höhere Teamleistung.",
+          "Bearbeitung von 180+ Eskalationen mit 90%+ Kundenzufriedenheit.",
+          "Unterstützte den Übergang von SBG zu GBG in sechs Monaten."
+        ]
+      },
+      {
+        "period": "03/2019 - 09/2022",
+        "company": "MS Agarwal Foundries Pvt. Ltd., Hyderabad",
+        "role": "Junior Ingenieur",
+        "details": [
+          "Installation und Inbetriebnahme mechanischer Systeme in drei Stahlwerken (€50M).",
+          "Leitung des Thermex Quenching System Projekts, Qualitätssteigerung um 18%, Ausschussreduktion um 12%.",
+          "Koordination von 25+ funktionsübergreifenden Teams, Projektverzögerungen um 35% reduziert."
+        ]
+      },
+      {
+        "period": "11/2018 - 01/2019",
+        "company": "Amazon, Frankenthal",
+        "role": "Qualitätskontrollmitarbeiter",
+        "details": [
+          "Untersuchung und Behebung fehlgeschlagener Sendungen; 95+ Qualitätsprüfungen täglich.",
+          "Monatlich 1.900 Artikel erfolgreich reintegriert.",
+          "Teilnahme an vier Kaizen-Initiativen, Steigerung der Versandgenauigkeit um 11%."
+        ]
+      },
+      {
+        "period": "01/2016 - 10/2017",
+        "company": "Lokesh Machines Ltd., Hyderabad",
+        "role": "Maschinenbau Ingenieur",
+        "details": [
+          "Entwicklung von 185+ CAD-Spannvorrichtungen und 280+ Zeichnungen, Produktionszeit um 23% reduziert.",
+          "Optimierung der Fertigungsprozesse für 14 Zylinderblock-Varianten."
+        ]
+      },
+      {
+        "period": "01/2014 - 12/2015",
+        "company": "Rane Brake Lining Ltd., Hyderabad",
+        "role": "Maschinenbau Ingenieur",
+        "details": [
+          "Mitarbeit an 7 F&E-Projekten, 3 Produkte erfolgreich eingeführt.",
+          "Durchführung von 140+ thermischen Analysen, Steigerung der Hitzebeständigkeit um 28%.",
+          "Entwicklung und Testing von 23 Prototypen, >90% Erfolgsquote."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "period": "06/2011 - 06/2015",
+        "institution": "JNTU Hyderabad, Indien",
+        "degree": "B. Tech Maschinenbau"
+      }
+    ],
+    "certifications": [
+      "McKinsey Forward - BUIC (08/2025 - 11/2025)",
+      "AI Generalist Zertifizierung - Outskill, Berlin (06/2025 - 07/2025)",
+      "PRINCE2® Specialist (Foundation + Practitioner) - Lecturio GmbH (12/2024 - 04/2025)",
+      "PeopleCert® Scrum Master - Lecturio GmbH (11/2024 - 02/2025)"
+    ],
+    "skills": {
+      "Projektmanagement": ["PRINCE2®", "Agile", "Scrum", "Meilenstein- & Budgetkontrolle", "Prozessoptimierung", "Change Management", "Stakeholder-Management"],
+      "Engineering": ["Mechanische Systeme", "Lean Manufacturing", "Six Sigma Grundlagen", "Qualitätsmanagement (ISO 9001)", "Arbeitsschutz (OHSAS 18001)"],
+      "KI & Daten": ["AI Generalist", "Prompt Engineering", "Excel", "SQL", "Python (Grundlagen)"],
+      "Sprachen": ["Englisch - C2", "Deutsch - B1"]
+    },
+    "contact": {
+      "email": "nikhilchitrapu193@gmail.com",
+      "phone": "+49 155 10877211",
+      "location": "Berlin, Deutschland",
+      "linkedin": "https://linkedin.com/in/nikhilchitrapu",
+      "github": "https://github.com/chitrapunikhil"
+    }
+  }
+}
